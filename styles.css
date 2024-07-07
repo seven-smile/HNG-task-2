@@ -411,7 +411,102 @@ footer {
 .footer-bottom {
   text-align: center;
 }
+/*Order success starts here*/
+.payment-successful {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
 
+.modal-content {
+  text-align: center;
+}
+
+.modal-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.modal-content h2 {
+  margin-top: 10px;
+}
+
+.modal-content p {
+  margin: 10px 0;
+}
+
+.modal-content a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.modal-content button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-contact,
+.footer-links,
+.footer-social {
+  width: 22%;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+}
 /*footer starts here*/
 footer {
   background-color: #333;
