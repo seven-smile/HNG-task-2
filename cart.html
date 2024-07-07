@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Savvy</div>
+            <ul>
+                <li><a href="shopping.html">Shop</a></li>
+                <!--<li><a href="#">About Us</a></li> -->
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shopping-bag">
+            <h1>Shopping Bag</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="dummy-image.jpg" alt="Product Image">
+                            <span>Hotel T-shirt</span>
+                        </td>
+                        <td>
+                            <div class="quantity-selector">
+                                <button class="decrease">-</button>
+                                <input type="number" value="1">
+                                <button class="increase">+</button>
+                            </div>
+                        </td>
+                        <td>$490</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="dummy-image.jpg" alt="Product Image">
+                            <span>Hotel T-shirt</span>
+                        </td>
+                        <td>
+                            <div class="quantity-selector">
+                                <button class="decrease">-</button>
+                                <input type="number" value="1">
+                                <button class="increase">+</button>
+                            </div>
+                        </td>
+                        <td>$490</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="order-summary">
+                <h2>Order Summary (2 items)</h2>
+                <form>
+                    <label for="discount-code">Enter discount code</label>
+                    <input type="text" id="discount-code" placeholder="Discount code">
+                    <button type="submit">Apply</button>
+                </form>
+                <div class="totals">
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span>$980</span>
+                    </div>
+                    <div class="shipping-fees">
+                        <span>Shipping fees</span>
+                        <span>$100</span>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <span>$1080</span>
+                    </div>
+                </div>
+                <div class="payment-options">
+                    <img src="mastercard-logo.png" alt="MasterCard">
+                    <img src="paypal-logo.png" alt="PayPal">
+                    <img src="visa-logo.png" alt="Visa">
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Savvy</div>
+            <div class="footer-contact">
+                <p>Email: info@savvy.com</p>
+                <p>Phone: +234 123 5678 984</p>
+                <p>Address: 123 Sunshine Avenue, Lagos, Nigeria</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Who We Are</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">BestSellers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Info</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
