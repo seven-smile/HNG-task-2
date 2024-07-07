@@ -241,7 +241,178 @@ table img {
   cursor: pointer;
   font-size: 16px;
 }
+/*Checkout starts here*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.icons {
+  float: right;
+}
+
+.icons a {
+  margin-left: 20px;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.checkout-form,
+.order-summary {
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.checkout-form label {
+  font-weight: bold;
+}
+
+.checkout-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background-color: #45a049;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-details div {
+  width: 48%;
+}
+
+.order-summary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.order-summary h2 {
+  margin-top: 0;
+}
+
+.order-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.order-summary-details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-contact p,
+.footer-links ul {
+  margin: 5px 0;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+/*footer starts here*/
 footer {
   background-color: #333;
   color: #fff;

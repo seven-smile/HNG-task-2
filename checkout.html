@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><div class="logo">Savvy</div></a>
+            <ul>
+                <li><a href="shopping.html">Shop</a></li>
+                <!--<li><a href="#">About Us</a></li> -->
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Checkout</h1>
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="myname@mail.com">
+                    <label for="name">Cardholder name</label>
+                    <input type="text" id="name" placeholder="Mary Jane">
+                    <label for="card-number">Cardholder number</label>
+                    <input type="text" id="card-number" placeholder="1342 1234 4567 9786">
+                    <div class="card-details">
+                        <div>
+                            <label for="expiry-date">Expiration date</label>
+                            <input type="text" id="expiry-date" placeholder="MM/YY">
+                        </div>
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="247">
+                        </div>
+                    </div>
+                    <label for="country">Country or region</label>
+                    <select id="country">
+                        <option value="Nigeria">Nigeria</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                    <button type="submit">Pay $1080</button>
+                </div>
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="order-item">
+                        <img src="product-image.jpg" alt="Hotel T-shirt">
+                        <div>
+                            <p>Hotel T-shirt</p>
+                            <p>$490</p>
+                            <p>Quantity: 1</p>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="product-image.jpg" alt="Hotel T-shirt">
+                        <div>
+                            <p>Hotel T-shirt</p>
+                            <p>$490</p>
+                            <p>Quantity: 1</p>
+                        </div>
+                    </div>
+                    <div class="order-summary-details">
+                        <p>Subtotal: $980</p>
+                        <p>Tax: -</p>
+                        <p>Shipping fees: $100</p>
+                        <p>Discount: -</p>
+                        <p>Total: $1080</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Savvy</div>
+            <div class="footer-contact">
+                <p>Email: info@savvy.com</p>
+                <p>Phone: +234 123 5678 984</p>
+                <p>Address: BL 12345, 123 Sunshine Avenue, Lagos, Nigeria</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Who We Are</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">BestSellers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Info</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2022. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
