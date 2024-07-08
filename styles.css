@@ -155,15 +155,16 @@ a:hover {
 .newsletter {
   padding-top: 5px;
   margin-top: 0px;
-  padding-left: 130px;
-  margin-left: 130px;
+  justify-content: space-around;
 }
 
 .news-continer {
   background-color: #54514d;
   border-radius: 40px;
   padding: 5px;
-  width: 1240px;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .newsletter h2 {
   padding-top: 20px;
@@ -178,6 +179,7 @@ a:hover {
 
 .update-fm {
   padding-bottom: 20px;
+  justify-content: space-around;
 }
 
 .newsletter p {
@@ -283,7 +285,7 @@ table img {
 
 .order-summary form button {
   padding: 5px 10px;
-  background-color: #3a3a3a;
+  background-color: #483c32;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -303,7 +305,7 @@ table img {
 .checkout-btn {
   width: 100%;
   padding: 10px;
-  background-color: #3a3a3a;
+  background-color: #483c32;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -366,6 +368,7 @@ header::after {
 }
 main {
   padding: 5px;
+  justify-content: space-around;
 }
 
 .checkout-container {
@@ -512,7 +515,7 @@ footer {
 }
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 10px 0;
   border-bottom: 1px solid #e5e5e5; /* Divider line */
@@ -532,7 +535,7 @@ footer {
 .footer-info {
   text-align: left; /* Align text to the left */
   padding-top: 20px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .footer-info p,
 .footer-info a {
