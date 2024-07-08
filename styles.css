@@ -20,10 +20,10 @@ nav {
   padding: 0 5px;
   padding-right: 20px;
 }
-
 .logo {
   font-size: 24px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 nav ul {
@@ -38,13 +38,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
+  color: #4e4e4e;
+  font-weight: 400;
 }
 
-nav .icons a img {
-  width: 24px;
-  margin-left: 15px;
+nav .icons a {
+  color: #313131;
+  width: 19px;
+  border: 1.5px;
 }
 
 .occ {
@@ -127,6 +128,17 @@ nav .icons a img {
   width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+/*links*/
+a {
+  color: inherit; /* Inherit color from parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Optional: Add hover styles if needed */
+a:hover {
+  text-decoration: underline; /* Underline on hover, or any other desired effect */
 }
 
 /*Stars*/
