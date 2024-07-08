@@ -50,12 +50,10 @@ nav .icons a img {
 }
 
 /*trends */
-
 .trends {
   background-color: #f9f9f9;
   padding: 2rem 1rem;
   border-radius: 10px;
-  margin-bottom: 2rem;
 }
 
 .trends-content {
@@ -74,7 +72,7 @@ nav .icons a img {
 .collections,
 .newsletter {
   text-align: center;
-  padding: 50px 20px;
+  padding: 10px 20px;
 }
 
 .trends h2,
@@ -102,12 +100,14 @@ nav .icons a img {
   font-size: 16px;
   margin-bottom: 20px;
 }
-
+/*collections start here*/
+.collections {
+  padding-top: 5px;
+}
 .collections .collection-grid {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 28px;
 }
 
 .collections .collection-item {
@@ -121,6 +121,47 @@ nav .icons a img {
   border-radius: 5px;
 }
 
+/*Stars*/
+.stars {
+  color: #ffd700; /* Gold color for the stars */
+  margin-left: 10px; /* Space between price and stars */
+}
+
+.stars i {
+  margin-right: 2px; /* Space between stars */
+}
+
+/*newsletter starts here*/
+.newsletter {
+  padding-top: 5px;
+  margin-top: 0px;
+}
+
+.news-continer {
+  background-color: #54514d;
+  border-radius: 20px;
+  padding: 20px, 20px, 20px, 40px;
+}
+.newsletter h2 {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: Public sans, sans-serif;
+  margin-bottom: 0px;
+}
+
+.update-fm {
+  padding-bottom: 20px;
+}
+
+.newsletter p {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  align-items: center;
+}
 .newsletter form {
   display: flex;
   justify-content: center;
@@ -135,13 +176,20 @@ nav .icons a img {
 }
 
 .newsletter button {
-  padding: 10px 20px;
-  background-color: #000;
+  padding: 10px 5px;
+  background-color: #483c32;
   color: #fff;
   border: none;
   border-radius: 5px;
 }
 
+.circle-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+}
 /* cart start here*/
 main {
   padding: 20px;
@@ -423,11 +471,18 @@ footer {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: none;
-  z-index: 1000;
 }
 
 .modal-content {
   text-align: center;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .modal-content img {
@@ -752,6 +807,8 @@ footer {
   display: flex;
   font-size: 24px;
   color: 483C32;
+  cursor: pointer;
+  padding-left: 20px;
 }
 
 .exp .arr {

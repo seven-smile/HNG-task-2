@@ -1,3 +1,4 @@
+// Function to open tabs
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
@@ -23,4 +24,29 @@ function openTab(evt, tabName) {
 // Initialize the first tab as active
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".tab-button").click();
+    
+    // Modal functionality
+    const payButton = document.getElementById('pay-button');
+    const modal = document.getElementById('payment-successful-modal');
+    const closeModal = document.getElementById('close-modal');
+    const backToHomeButton = document.getElementById('back-to-home');
+
+    payButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        modal.style.display = 'block';
+    });
+
+    closeModal.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    backToHomeButton.addEventListener('click', function () {
+        window.location.href = 'index.html';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
