@@ -387,10 +387,13 @@ main {
 
 .checkout-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5rem;
 }
-
+.checkout-container .checkout-form {
+  padding-right: 30px;
+}
 .checkout-form,
 .order-summary {
   width: 48%;
@@ -451,7 +454,14 @@ main {
   height: 80px;
   margin-right: 10px;
 }
-
+.order-summary-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.col {
+  flex-direction: column;
+}
 .order-summary-details p {
   display: flex;
   justify-content: space-between;
