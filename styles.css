@@ -7,13 +7,18 @@ body {
 header {
   background-color: #fff;
   padding: 20px;
+  padding-bottom: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0px;
+  padding: 0 5px;
+  padding-right: 20px;
 }
 
 .logo {
@@ -72,7 +77,7 @@ nav .icons a img {
 .collections,
 .newsletter {
   text-align: center;
-  padding: 10px 20px;
+  padding: 5px;
 }
 
 .trends h2,
@@ -85,8 +90,9 @@ nav .icons a img {
 .trends p {
   font-size: 28px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   color: 313131;
+  padding-left: 20px;
 }
 
 .trends h2 {
@@ -94,6 +100,7 @@ nav .icons a img {
   font-family: sans-serif;
   font-weight: 500;
   color: #313131;
+  padding-left: 20px;
 }
 .trends p,
 .newsletter p {
@@ -108,6 +115,7 @@ nav .icons a img {
   display: flex;
   justify-content: center;
   gap: 28px;
+  padding: 5px;
 }
 
 .collections .collection-item {
@@ -135,12 +143,15 @@ nav .icons a img {
 .newsletter {
   padding-top: 5px;
   margin-top: 0px;
+  padding-left: 130px;
+  margin-left: 130px;
 }
 
 .news-continer {
   background-color: #54514d;
-  border-radius: 20px;
-  padding: 20px, 20px, 20px, 40px;
+  border-radius: 40px;
+  padding: 5px;
+  width: 1240px;
 }
 .newsletter h2 {
   padding-top: 20px;
@@ -150,6 +161,7 @@ nav .icons a img {
   font-weight: 700;
   font-family: Public sans, sans-serif;
   margin-bottom: 0px;
+  margin-top: 16px;
 }
 
 .update-fm {
@@ -191,10 +203,6 @@ nav .icons a img {
   cursor: pointer;
 }
 /* cart start here*/
-main {
-  padding: 20px;
-}
-
 .shopping-bag h1 {
   font-size: 28px;
   margin-bottom: 20px;
@@ -344,9 +352,8 @@ header::after {
   display: table;
   clear: both;
 }
-
 main {
-  padding: 20px 0;
+  padding: 5px;
 }
 
 .checkout-container {
@@ -421,44 +428,6 @@ main {
   justify-content: space-between;
   margin: 5px 0;
 }
-
-footer {
-  background-color: #f1f1f1;
-  padding: 20px 0;
-}
-
-.footer-logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.footer-contact p,
-.footer-links ul {
-  margin: 5px 0;
-}
-
-.footer-links ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 5px;
-}
-
-.footer-links ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
-.footer-social a {
-  margin-right: 10px;
-}
-
-.footer-bottom {
-  text-align: center;
-}
 /*Order success starts here*/
 .payment-successful {
   position: fixed;
@@ -517,134 +486,121 @@ footer {
 }
 
 footer {
-  background-color: #333;
+  background-color: #222222; /* Darker background */
   color: white;
   padding: 20px 0;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
+  text-align: center; /* Centered content */
+  /*background-color: #1e1e1e; /* Dark background */
+  /*color: #ffffff; /* White text color */
+  /*padding: 20px 0;
+  text-align: center; /* Centered content */
+  /*
   flex-wrap: wrap;
+  justify-content: space-between;*/
 }
-
-.footer-logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.footer-contact,
-.footer-links,
-.footer-social {
-  width: 22%;
-}
-
-.footer-links ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-social a {
-  margin-right: 10px;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 10px 0;
-  border-top: 1px solid #444;
-}
-/*footer starts here*/
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5; /* Divider line */
 }
-
 .footer-logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: "Pacifico", cursive; /* Custom font for logo */
+  font-size: 36px; /* Larger font size */
+  color: #ffffff; /* White color */
+  margin-bottom: 10px;
+  padding-left: 0px;
+  margin-left: 0;
+  margin-right: 0;
 }
-
-.footer-info p {
-  margin: 10px 0;
+.where {
+  padding-left: 60px;
 }
-
+.footer-info {
+  text-align: left; /* Align text to the left */
+  padding-top: 20px;
+  justify-content: space-evenly;
+}
+.footer-info p,
+.footer-info a {
+  color: #bdbdbd; /* Light grey color */
+  margin: 15px 0;
+  font-size: 14px;
+}
 .footer-links {
   display: flex;
-  gap: 40px;
+
+  flex-wrap: wrap;
 }
 
 .footer-section {
-  text-align: left;
+  margin: 0 45px; /* Space between sections */
+  justify-content: space-between;
 }
-
 .footer-section h3 {
-  font-size: 18px;
+  font-size: 18px; /* Section title size */
+  color: #ffffff; /* White color */
   margin-bottom: 10px;
 }
-
 .footer-section ul {
   list-style: none;
   padding: 0;
 }
-
-.footer-section ul li {
+.footer-section li {
   margin: 5px 0;
 }
-
-.footer-section ul li a {
-  text-decoration: none;
-  color: #fff;
+.footer-section a {
+  color: #bdbdbd; /* Light grey color */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px;
 }
-
-.footer-social a img {
-  width: 24px;
-  margin: 0 10px;
+.footer-social {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
 }
-
-@media (max-width: 768px) {
-  .nav ul {
-    flex-direction: column;
-  }
-
-  .collections .collection-item {
-    width: 100%;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-links {
-    flex-direction: column;
-  }
+.footer-social a {
+  color: #ffffff; /* White color */
+  font-size: 20px; /* Icon size */
+  margin: 0 10px; /* Space between icons */
+  transition: color 0.3s; /* Smooth transition */
 }
-
-/* Existing styles here */
-
+.footer-social a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+.footer-bottom {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #bdbdbd; /* Light grey color */
+  margin-top: 10px;
+  text-align: left;
+}
+.footer-bottom p {
+  color: #ffffff; /* White color */
+  text-decoration: none; /* Remove underline */
+  margin: 0 5px;
+  padding-left: 40px;
+  transition: color 0.3s; /* Smooth transition */
+}
+.las {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+/*fafa*/
+.fa-solid .fa-envelope {
+  padding-right: 5px;
+}
 /* Hero Section */
 .hero {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 400px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .hero img {
