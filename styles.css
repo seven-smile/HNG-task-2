@@ -816,9 +816,40 @@ footer {
   height: auto;
   border-bottom: 1px solid #ccc;
 }
-
 .product-info {
-  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+/*modal buttons for shopping*/
+.modal-buttons {
+  /*padding: 10px;*/
+  .modal-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .modal-buttons button {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-item:hover .modal-buttons {
+    opacity: 1;
+  }
+
+  button .fas {
+    font-size: 1.2rem;
+  }
 }
 
 .product-title {
@@ -1119,6 +1150,7 @@ footer {
     margin-right: 20px;
   }
 }
+/*footer media query below */
 @media (max-width: 480px) {
   /*footer media query*/
   footer {
@@ -1226,9 +1258,8 @@ footer {
   .footer-social a:hover {
     color: #ffd700; /* Gold color on hover */
   }
-
+  /*trends query below*/
   @media (max-width: 600px) {
-    /*trends query*/
     .trends {
       background-color: #f9f9f9;
       padding: 1rem 1rem;
@@ -1284,8 +1315,8 @@ footer {
       padding-bottom: 10px;
     }
   }
+  /* Hero Section below */
   @media (max-width: 600px) {
-    /* Hero Section */
     .hero {
       position: relative;
     }
@@ -1396,7 +1427,7 @@ footer {
     }
   }
 }
-/*body, header and nav query for mobile*/
+/*body, header and nav query for mobile below*/
 @media (max-width: 600px) {
   body {
     margin: 0;
@@ -1415,7 +1446,7 @@ footer {
     display: inline-block;
   }
   nav .logo {
-    font-size: 11px;
+    font-size: 13px;
     cursor: pointer;
     margin-right: 15px;
     margin-left: 5px;
