@@ -55,9 +55,9 @@
                         <option value="Nigeria">United Kindom</option>
                         <!-- Add more countries as needed -->
                     </select>
-                    <a href="order-successful.html"><button type="submit">Pay $1080</button></a>
+                    <a href="order-successful.html"><button type="submit" id="pay-button">Pay $1080</button></a>
                 </div>
-                <div class="order-summary">
+                <div id="order-summary" class="order-summary">
                     <h2>Order Summary</h2>
                     <hr>
                     <div class="order-item">
@@ -80,12 +80,12 @@
                     
                     <div class="order-summary-details">
                         
-                        <p>Subtotal: $980</p>
-                        <p>Tax: -</p>
-                        <p>Shipping fees: $100</p>
-                        <p>Discount: -</p>
+                        <p>Subtotal: <span id="subtotal">$0</span></p>
+                        <p>Tax: <span id="tax">$0</span></p>
+                        <p>Shipping fees: <span id="shipping">$100</span></p>
+                        <p>Discount: <span id="discount">$0</span></p>
                         <hr>
-                        <p>Total: $1080</p>
+                        <p>Total: <span id="total">$0</span></p>
                     </div>
                 </div>
             </div>

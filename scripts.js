@@ -50,3 +50,71 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Example order data
+    const orderData = {
+        items: [
+            { name: 'Hotel T-shirt', price: 490, quantity: 1, imgSrc: 'aa.jpg' },
+            { name: 'Hotel T-shirt', price: 490, quantity: 1, imgSrc: 'aa.jpg' }
+        ],
+        subtotal: 980,
+        tax: 0,
+        shipping: 100,
+        discount: 0,
+        total: 1080
+    };
+
+    // Function to render order summary
+    function renderOrderSummary(data) {
+        const orderItemsContainer = document.getElementById('order-items');
+        orderItemsContainer.innerHTML = ''; // Clear existing items
+
+        data.items.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.className = 'order-item';
+            itemElement.innerHTML = `
+                <img src="${item.imgSrc}" alt="${item.name}">
+                <div>
+                    <p>${item.name}</p>
+                    <p>$${item.price}</p>
+                    <p>Quantity: ${item.quantity}</p>
+                </div>
+            `;
+            orderItemsContainer.appendChild(itemElement);
+        });
+
+        document.getElementById('subtotal').innerText = `$${data.subtotal}`;
+        document.getElementById('tax').innerText = `$${data.tax}`;
+        document.getElementById('shipping').innerText = `$${data.shipping}`;
+        document.getElementById('discount').innerText = `$${data.discount}`;
+        document.getElementById('total').innerText = `$${data.total}`;
+    }
+
+    // Render the order summary on page load
+    renderOrderSummary(orderData);
+
+    // Modal functionality
+    const payButton = document.getElementById('pay-button');
+    const modal = document.getElementById('payment-successful-modal');
+    const closeModal = document.getElementById('close-modal');
+    const backToHomeButton = document.getElementById('back-to-home');
+
+    payButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        modal.style.display = 'block';
+    });
+
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    backToHomeButton.addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});

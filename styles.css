@@ -594,6 +594,7 @@ main {
   display: none;
 }
 
+/* Existing CSS */
 .modal-content {
   text-align: center;
 }
@@ -635,6 +636,29 @@ main {
 
 .modal-content button:hover {
   background-color: #45a049;
+}
+
+/* Additional CSS for Modal Display and Positioning */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  position: relative; /* To position the close button */
 }
 
 footer {
@@ -1005,9 +1029,8 @@ footer {
     cursor: pointer;
   }
 }
-
-@media (max-width: 600) {
-  /*news section */
+/*news section */
+@media (max-width: 600px) {
   .newsletter {
     padding: 1rem 1rem;
     text-align: center;
@@ -1063,6 +1086,129 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  /*footer media query*/
+  footer {
+    background-color: #222222; /* Darker background */
+    color: white;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    list-style: none;
+    /* Centered content */
+    /*background-color: #1e1e1e; /* Dark background */
+    /*color: #ffffff; /* White text color */
+    /*padding: 20px 0;
+    text-align: center; /* Centered content */
+    /*
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+  }
+  .footer-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    justify-content: space-between;
+
+    /* Divider line 
+    
+    /*justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    */
+  }
+  .footer-links {
+    display: flex;
+  }
+  .footer-section ul li {
+    list-style: none;
+    text-align: center;
+  }
+  .footer-section ul {
+    list-style: none;
+    align-items: center;
+  }
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .footer-content .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .footer-content .footer-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .footer-content .footer-links {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .footer-content .footer-links .footer-section {
+    margin-bottom: 20px;
+  }
+  .footer-content .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .footer-content .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-content .footer-links ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer-content .footer-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .footer-bottom {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #bdbdbd; /* Light grey color */
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .footer-bottom p {
+    color: #ffffff; /* White color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px;
+    padding-left: 40px;
+    transition: color 0.3s; /* Smooth transition */
+  }
+
+  .footer-bottom .footer-social a {
+    color: #ffffff;
+    margin-left: 15px;
+  }
+
+  .las {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+  .footer-social a {
+    color: #ffffff; /* White color*/
+    font-size: 20px; /* Icon size */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Smooth transition */
+  }
+  .footer-social a:hover {
+    color: #ffd700; /* Gold color on hover */
+  }
+  .footer-social {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 48px) {
   /*footer media query*/
   footer {
     background-color: #222222; /* Darker background */
