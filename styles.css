@@ -635,7 +635,7 @@ main {
 /* Additional CSS for Modal Display and Positioning */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: sticky; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
@@ -809,6 +809,7 @@ footer {
   overflow: hidden;
   text-align: center;
   background-color: white;
+  position: relative;
 }
 
 .product-item img {
@@ -821,35 +822,33 @@ footer {
   margin-top: 10px;
 }
 /*modal buttons for shopping*/
+/*padding: 10px;*/
 .modal-buttons {
-  /*padding: 10px;*/
-  .modal-buttons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
-  .modal-buttons button {
-    background: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
+.modal-buttons button {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
-  .product-item:hover .modal-buttons {
-    opacity: 1;
-  }
+.product-item:hover .modal-buttons {
+  opacity: 1;
+}
 
-  button .fas {
-    font-size: 1.2rem;
-  }
+button .fas {
+  font-size: 1.2rem;
 }
 
 .product-title {

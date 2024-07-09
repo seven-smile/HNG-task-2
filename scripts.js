@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     likeButtons.forEach(button => {
         button.addEventListener('click', () => {
+            button.classList.toggle('liked');
             alert('Liked!');
         });
     });
