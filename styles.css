@@ -230,15 +230,25 @@ nav .icons a {
   align-items: center;
 }
 
-.collections .collection-item {
+.collection-item {
   width: 30%;
   text-align: center;
 }
 
-.collections .collection-item img {
+.collection-item img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+.collection-item p {
+  font-size: 18px;
+  color: #313131;
+  margin-top: 10px;
+}
+
+.circle-arrow {
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /*links*/
@@ -320,10 +330,6 @@ a:hover {
   border-radius: 5px;
 }
 
-.circle-arrow {
-  font-size: 18px;
-  cursor: pointer;
-}
 /* cart start here*/
 .shopping-bag h1 {
   font-size: 28px;
@@ -858,7 +864,47 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/*collection media query*/
+@media (max-width: 600px) {
+  .collections {
+    padding-top: 2rem 1rem;
+  }
+  .collections h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #313131;
+    margin-bottom: 40px;
+  }
+  .collection-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 18px;
+    padding-left: 10px;
+    align-items: center;
+  }
 
+  .collection-item {
+    width: 30%;
+    text-align: center;
+  }
+
+  .collection-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .collection-item p {
+    font-size: 18px;
+    color: #313131;
+    margin-top: 10px;
+  }
+
+  .circle-arrow {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
 @media (max-width: 600px) {
   /* Hero Section */
   .hero {
