@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Render the order summary on page load
     renderOrderSummary(orderData);
 
-    // Modal functionality
+    //  succesful payment Modal functionality
     const payButton = document.getElementById('pay-button');
     const modal = document.getElementById('payment-successful-modal');
     const closeModal = document.getElementById('close-modal');
@@ -116,5 +116,30 @@ document.addEventListener('DOMContentLoaded', function() {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
+    });
+});
+
+/*shopping modal js*/
+document.addEventListener('DOMContentLoaded', () => {
+    const likeButtons = document.querySelectorAll('.like-button');
+    const cartButtons = document.querySelectorAll('.cart-button');
+    const bookmarkButtons = document.querySelectorAll('.bookmark-button');
+
+    likeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Liked!');
+        });
+    });
+
+    cartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Added to cart!');
+        });
+    });
+
+    bookmarkButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Bookmarked!');
+        });
     });
 });
