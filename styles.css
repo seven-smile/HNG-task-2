@@ -330,7 +330,92 @@ a:hover {
 }
 
 /* cart start here*/
-.shopping-bag h1 {
+.shopping-bag {
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #f9f9f9;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.product-name {
+  display: flex;
+  align-items: center;
+}
+
+.product-name img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.order-summary {
+  width: 35%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.order-summary h2 {
+  margin-top: 0;
+}
+
+.order-summary input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.order-summary .apply-btn {
+  padding: 10px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.order-summary p {
+  margin: 10px 0;
+}
+
+.payment-methods img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/*.shopping-bag h1 {
   font-size: 28px;
   margin-bottom: 5rem;
   margin-top: 3rem;
@@ -841,6 +926,12 @@ footer {
   padding: 10px;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-buttons button .fas {
+  font-size: 1.2rem;
 }
 
 .product-item:hover .modal-buttons {
@@ -850,7 +941,13 @@ footer {
 button .fas {
   font-size: 1.2rem;
 }
+.liked {
+  color: red; /* Highlight the liked button */
+}
 
+.bookmarked {
+  color: green;
+}
 .product-title {
   font-size: 16px;
   margin: 10px 0;

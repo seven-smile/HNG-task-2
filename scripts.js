@@ -144,3 +144,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+/** shopping Cart script */
+const prices = [490, 490]; // Prices for each product
+
+function incrementQuantity(index) {
+    const quantityElement = document.getElementById(`quantity-${index}`);
+    let quantity = parseInt(quantityElement.textContent);
+    quantity += 1;
+    quantityElement.textContent = quantity;
+    updateOrderSummary();
+}
+
+function decrementQuantity(index) {
+    const quantityElement = document.getElementById(`quantity-${index}`);
+    let quantity = parseInt(quantityElement.textContent);
+    if (quantity > 1) {
+        quantity -= 1;
+        quantityElement.textContent = quantity;
+        updateOrderSummary();
+    }
+}
+
+function updateOrderSummary() {
+    const quantities = document.querySelectorAll('[id^="quantity-"]');
+    let subtotal = 0;
+    quantities.forEach((quantityElement, index) => {
+        const quantity = parseInt(quantityElement.textContent);
+        subtotal += quantity * prices[index];
+    });
+    document.getElementById('subtotal').textContent = subtotal;
+    const shippingFees = 100;
+    const total = subtotal + shippingFees;
+    document.getElementById('total').textContent = total;
+}
+
+function proceedToCheckout() {
+    alert('Proceeding to checkout');
+}

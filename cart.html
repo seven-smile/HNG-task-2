@@ -28,7 +28,7 @@
         </nav>
     </header>
 
-    <main>
+    <main> <!--
         <section class="shopping-bag">
             <h1>Shopping Bag</h1>
             <div class="both-div">
@@ -120,6 +120,59 @@
                 </div>
             </div>
         </section>
+        -->
+        <h1>Shopping Bag</h1>
+        <div class="shopping-bag">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td class="product-name">
+                            <img src="tshirt.jpg" alt="Hotel T-shirt">
+                            <span>Hotel T-shirt</span>
+                        </td>
+                        <td class="quantity">
+                            <button class="quantity-btn" onclick="decrementQuantity(0)">-</button>
+                            <span id="quantity-0">1</span>
+                            <button class="quantity-btn" onclick="incrementQuantity(0)">+</button>
+                        </td>
+                        <td class="price">$<span id="price-0">490</span></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name">
+                            <img src="tshirt.jpg" alt="Hotel T-shirt">
+                            <span>Hotel T-shirt</span>
+                        </td>
+                        <td class="quantity">
+                            <button class="quantity-btn" onclick="decrementQuantity(1)">-</button>
+                            <span id="quantity-1">1</span>
+                            <button class="quantity-btn" onclick="incrementQuantity(1)">+</button>
+                        </td>
+                        <td class="price">$<span id="price-1">490</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="order-summary">
+                <h2>Order Summary (2 items)</h2>
+                <input type="text" placeholder="Enter discount code">
+                <button class="apply-btn">Apply</button>
+                <p>Subtotal: $<span id="subtotal">980</span></p>
+                <p>Shipping fees: $<span id="shipping-fees">100</span></p>
+                <p>Total: $<span id="total">1080</span></p>
+                <div class="payment-methods">
+                    <img src="mastercard.png" alt="MasterCard">
+                    <img src="paypal.png" alt="PayPal">
+                    <img src="visa.png" alt="Visa">
+                </div>
+                <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -184,7 +237,7 @@
         </div>
         
     </footer>
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>
