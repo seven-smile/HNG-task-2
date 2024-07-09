@@ -9,20 +9,16 @@ header {
   padding: 20px;
   padding-bottom: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 0px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0px;
-  padding: 0 5px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+nav .logo {
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -39,12 +35,10 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #4e4e4e;
-  font-weight: 400;
 }
 
 nav .icons a {
   color: #313131;
-  width: 19px;
   border: 1.5px;
 }
 
@@ -63,9 +57,9 @@ nav .icons a {
 }
 
 .trends-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 .trends-text {
   max-width: 50%;
@@ -74,60 +68,80 @@ nav .icons a {
   width: 300px;
   border-radius: 10px;
 }
-.trends,
-.collections,
-.newsletter {
-  text-align: center;
-  padding: 5px;
-}
-
-.trends h2,
-.collections h2,
-.newsletter h2 {
-  font-size: 28px;
+.trends h2 {
+  font-size: 36px;
+  color: #313131;
   margin-bottom: 20px;
 }
 
 .trends p {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 400;
-  text-align: left;
-  color: 313131;
-  padding-left: 20px;
-}
-
-.trends h2 {
-  font-size: 36px;
-  font-family: sans-serif;
-  font-weight: 500;
   color: #313131;
-  padding-left: 20px;
-}
-.trends p,
-.newsletter p {
-  font-size: 16px;
   margin-bottom: 20px;
 }
-/*collections start here*/
-.collections {
-  padding-top: 5px;
-}
-.collections .collection-grid {
+
+.trends .exp {
   display: flex;
-  justify-content: center;
-  gap: 28px;
-  padding: 5px;
+  align-items: center;
 }
 
-.collections .collection-item {
-  width: 30%;
+.trends .btn {
+  padding: 10px 20px;
+
+  color: #483c32;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.trends .arr {
+  font-size: 1.2rem;
+  color: #483c32;
+}
+
+.collections {
+  padding: 2rem 1rem;
+}
+
+.collections h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #313131;
+  margin-bottom: 40px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.collection-item {
   text-align: center;
 }
 
-.collections .collection-item img {
+.collection-item img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.collection-item p {
+  font-size: 18px;
+  color: #313131;
+  margin-top: 10px;
+}
+
+.circle-arrow {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.circle-arrow i {
+  font-size: 2rem;
+  color: #ff5a5f;
+  cursor: pointer;
 }
 
 /*links*/
@@ -153,60 +167,47 @@ a:hover {
 
 /*newsletter starts here*/
 .newsletter {
-  padding-top: 5px;
-  margin-top: 0px;
-  justify-content: space-around;
+  background-color: #54514d;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.news-continer {
-  background-color: #54514d;
-  border-radius: 40px;
-  padding: 5px;
-  align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
+.news-container {
+  max-width: 600px;
+  margin: 0 auto;
 }
-.newsletter h2 {
-  padding-top: 20px;
-  padding-bottom: 0px;
-  font-size: 48px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: Public sans, sans-serif;
-  margin-bottom: 0px;
-  margin-top: 16px;
+
+.news-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.news-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .update-fm {
-  padding-bottom: 20px;
-  justify-content: space-around;
-}
-
-.newsletter p {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 400;
-  align-items: center;
-}
-.newsletter form {
   display: flex;
   justify-content: center;
-  gap: 10px;
 }
 
-.newsletter input[type="email"] {
+.update-fm input[type="email"] {
   padding: 10px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
 }
 
-.newsletter button {
-  padding: 10px 5px;
-  background-color: #483c32;
-  color: #fff;
+.update-fm button {
+  padding: 10px 20px;
+  font-size: 16px;
   border: none;
-  border-radius: 5px;
+  background-color: #313131;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 .circle-arrow {
@@ -637,7 +638,7 @@ footer {
 .hero {
   position: relative;
   width: 100%;
-  height: 400px;
+
   margin-top: 0;
   padding-top: 0;
 }
@@ -647,9 +648,8 @@ footer {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  inset: 0;
+
   z-index: -10;
-  background-color: transparent;
 }
 
 .hero-text {
@@ -668,17 +668,18 @@ footer {
 
 .hero-text h1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 36px;
   color: #ffffff;
+  padding-top: 10px;
 }
 
 .hero-text p {
-  font-size: 24px;
+  font-size: 16px;
   color: #ffffff;
 }
 
 .hero-text .btn {
-  margin-top: 10px;
+  margin: 20px 0;
   padding: 10px 20px;
   background-color: #483c32;
   color: #fff;
