@@ -274,40 +274,35 @@ a:hover {
 
 /*newsletter starts here*/
 .newsletter {
-  padding-top: 5px;
-  margin-top: 0px;
-  justify-content: space-around;
+  padding: 2rem 1rem;
+  text-align: center;
 }
-
 .news-continer {
   background-color: #54514d;
-  border-radius: 40px;
-  padding: 5px;
-  align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
+  border-radius: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .newsletter h2 {
   padding-top: 20px;
   padding-bottom: 0px;
-  font-size: 48px;
   color: #ffffff;
-  font-weight: 700;
   font-family: Public sans, sans-serif;
   margin-bottom: 0px;
-  margin-top: 16px;
+  margin-top: 0px;
+  font-size: 36px;
 }
 
 .update-fm {
   padding-bottom: 20px;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
 }
 
 .newsletter p {
   color: #ffffff;
-  font-size: 22px;
-  font-weight: 400;
-  align-items: center;
+  font-size: 18px;
 }
 .newsletter form {
   display: flex;
@@ -317,17 +312,19 @@ a:hover {
 
 .newsletter input[type="email"] {
   padding: 10px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
 }
 
 .newsletter button {
-  padding: 10px 5px;
+  padding: 10px 20px;
   background-color: #483c32;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 /* cart start here*/
