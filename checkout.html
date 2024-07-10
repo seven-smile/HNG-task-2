@@ -25,72 +25,70 @@
                 <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
     </header>
-    <main>
-        <div class="container">
-            <h1>Checkout</h1>
-            <div class="checkout-container">
-                <div class="checkout-form">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" placeholder="myname@mail.com">
-                    <label for="name">Cardholder name</label>
-                    <input type="text" id="name" placeholder="Mary Jane">
-                    <label for="card-number">Cardholder number</label>
-                    <input type="text" id="card-number" placeholder="1342 1234 4567 9786">
-                    <div class="card-details">
-                        <div>
-                            <label for="expiry-date">Expiration date</label>
-                            <input type="text" id="expiry-date" placeholder="MM/YY">
-                        </div>
-                        <div>
-                            <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" placeholder="247">
-                        </div>
-                    </div>
-                    <label for="country">Country or region</label>
-                    <select id="country">
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="Nigeria">Ghana</option>
-                        <option value="Nigeria">South Africa</option>
-                        <option value="Nigeria">United State</option>
-                        <option value="Nigeria">United Kindom</option>
-                        <!-- Add more countries as needed -->
-                    </select>
-                    <a href="order-successful.html"><button type="submit" id="pay-button">Pay $1080</button></a>
+    <main class="checkout-container">
+        <form class="checkout-form">
+            <h2>Checkout</h2>
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="myname@mail.com">
+
+            <label for="name">Cardholder name</label>
+            <input type="text" id="name" placeholder="Mary Jane">
+
+            <label for="card-number">Cardholder number</label>
+            <input type="text" id="card-number" placeholder="1342 1234 4567 9786">
+
+            <div class="card-details">
+                <div>
+                    <label for="expiry-date">Expiration date</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY">
                 </div>
-                <div id="order-summary" class="order-summary">
-                    <h2>Order Summary</h2>
-                    <hr>
-                    <div class="order-item">
-                        <img src="aa.jpg" alt="Hotel T-shirt">
-                        <div>
-                            <p>Hotel T-shirt</p>
-                            <p>$490</p>
-                            <p>Quantity: 1</p>
-                        </div>
-                    </div>
-                    <div class="order-item">
-                        <img src="aa.jpg" alt="Hotel T-shirt">
-                        <div>
-                            <p>Hotel T-shirt</p>
-                            <p>$490</p>
-                            <p>Quantity: 1</p>
-                        </div>
-                    </div>
-                    <hr>
-                    
-                    <div class="order-summary-details">
-                        
-                        <p>Subtotal: <span id="subtotal">$0</span></p>
-                        <p>Tax: <span id="tax">$0</span></p>
-                        <p>Shipping fees: <span id="shipping">$100</span></p>
-                        <p>Discount: <span id="discount">$0</span></p>
-                        <hr>
-                        <p>Total: <span id="total">$0</span></p>
-                    </div>
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="247">
                 </div>
+            </div>
+
+            <label for="country">Country or region</label>
+            <select id="country">
+                <option value="nigeria">Nigeria</option>
+                <option value="nigeria">Ghana</option>
+                <option value="nigeria">South Africa</option>
+                <option value="nigeria">USA</option>
+                <option value="nigeria">Canada</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <button type="button" id="pay-button"><a href="order-successful.html">Pay $1080</a></button>
+        </form>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="order-item">
+                <img src="aa.jpg" alt="Hotel T-shirt">
+                <div>
+                    <p>Hotel T-shirt</p>
+                    <p>$490</p>
+                    <p>Quantity: 1</p>
+                </div>
+            </div>
+            <div class="order-item">
+                <img src="aa.jpg" alt="Hotel T-shirt">
+                <div>
+                    <p>Hotel T-shirt</p>
+                    <p>$490</p>
+                    <p>Quantity: 1</p>
+                </div>
+            </div>
+            <div class="order-totals">
+                <p><span>Subtotal:</span><span>$980</span></p>
+                <p><span>Tax:</span><span>-</span></p>
+                <p><span>Shipping fees:</span><span>$100</span></p>
+                <p><span>Discount:</span><span>-</span></p>
+                <p><span>Total:</span><span>$1080</span></p>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer-content">
             <div class="leg">
@@ -153,6 +151,12 @@
         </div>
         
     </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <p>Thank you for your purchase!</p>
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -181,3 +181,18 @@ function updateOrderSummary() {
 function proceedToCheckout() {
     alert('Proceeding to checkout');
 }
+
+/**checkout page script */
+document.getElementById('pay-button').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'block';
+});
+
+document.getElementById('close-button').addEventListener('click', function() {
+    document.getElementById('modal').style.display = 'none';
+});
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('modal')) {
+        document.getElementById('modal').style.display = 'none';
+    }
+};
