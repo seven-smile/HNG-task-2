@@ -12,20 +12,20 @@
 
 <body>
     <header>
+        <a href="index.html"><div class="logo">Savvy</div></a>
         <nav>
-            <a href="index.html"><div class="logo">Savvy</div></a>
             <ul>
                 <li><a href="shopping.html">Shop</a></li>
-                <!--<li><a href="#">About Us</a></li> -->
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            <div class="icons">
+        </nav>
+        <div class="icons">
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href=""><i class="fa-regular fa-user"></i></a>
                 <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
-        </nav>
     </header>
 
     <main> <!--
@@ -162,16 +162,46 @@
                 <h2>Order Summary (2 items)</h2>
                 <input type="text" placeholder="Enter discount code">
                 <button class="apply-btn">Apply</button>
-                <p>Subtotal: $<span id="subtotal">980</span></p>
-                <p>Shipping fees: $<span id="shipping-fees">100</span></p>
-                <p>Total: $<span id="total">1080</span></p>
-                <div class="payment-methods">
-                    <img src="Mastercard.0.jpg" alt="MasterCard">
-                    <img src="paypal.png" alt="PayPal">
-                    <img src="visa.jpg" alt="Visa">
+                <hr>
+                <div class="all">
+                    <div>
+                        <p>Subtotal </span></p>
+                    </div>
+                    <div class="right">
+                        <p> $<span id="subtotal">980</span></p>
+                    </div>
                 </div>
-                <a href="checkout.html"><button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button></a>
+                <hr>
+                <div class="all">
+                    <div>
+                        <p>Shipping fees </span></p>
+                    </div>
+                    <div class="right">
+                        <p> $<span id="subtotal">100</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="all">
+                    <div>
+                        <p>Total </span></p>
+                    </div>
+                    <div class="right">
+                        <p> $<span id="subtotal">980</span></p>
+                    </div>
+                </div>
+                <div class="pass">
+                    <div class="payment-methods">
+                        <img src="Mastercard.0.jpg" alt="MasterCard">
+                        <img src="paypal.png" alt="PayPal">
+                        <img src="visa.jpg" alt="Visa">
+                    </div>
+                </div>
+                
             </div>
+        </div>
+        
+        <div class="ckout-div">
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
         </div>
     </main>
 
