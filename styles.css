@@ -328,6 +328,45 @@ a:hover {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
+/* General Styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .user-actions a {
+  margin: 0 10px;
+}
+
+main {
+  padding: 20px;
+}
 
 /* cart start here*/
 .shopping-bag {
@@ -667,13 +706,13 @@ main {
   transform: translate(-50%, -50%);
   background-color: white;
   border: 1px solid #e0e0e0;
-  padding: 20px;
+  padding: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: none;
 }
 
-/* Existing CSS */
+/* checkout modal */
 .modal-content {
   text-align: center;
 }
@@ -733,8 +772,8 @@ main {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 0 auto; /* 15% from the top and centered */
+  padding-bottom: 10px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   position: relative; /* To position the close button */
