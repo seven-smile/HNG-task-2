@@ -393,6 +393,7 @@ button .fas {
   justify-content: center;
   gap: 50px;
   padding: 50px 0;
+  margin-bottom: 15px;
 }
 
 .checkout-form,
@@ -497,7 +498,8 @@ button .fas {
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 30%;
+  height: 30%;
 }
 
 .close-button {
@@ -695,14 +697,6 @@ footer {
   padding: 1rem 1rem;
   justify-content: space-between;
   list-style: none;
-  /* Centered content */
-  /*background-color: #1e1e1e; /* Dark background */
-  /*color: #ffffff; /* White text color */
-  /*padding: 20px 0;
-  text-align: center; /* Centered content */
-  /*
-  flex-wrap: wrap;
-  justify-content: space-between;*/
 }
 .footer-content {
   display: flex;
@@ -710,13 +704,6 @@ footer {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   justify-content: space-between;
-
-  /* Divider line 
-  
-  /*justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 10px 0;
-  */
 }
 .footer-links {
   display: flex;
