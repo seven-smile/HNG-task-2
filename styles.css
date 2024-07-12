@@ -151,7 +151,6 @@ div .exp .arr {
   padding-bottom: 10px;
 }
 /*collections start here*/
-{
 .collections {
   padding-top: 2rem 1rem;
 }
@@ -190,9 +189,7 @@ div .exp .arr {
   font-size: 24px;
   cursor: pointer;
 }
-}
 /*links/stars*/
-{
 a {
   color: inherit; /* Inherit color from parent element */
   text-decoration: none; /* Remove underline */
@@ -212,9 +209,8 @@ a:hover {
 .stars i {
   margin-right: 2px; /* Space between stars */
 }
-}
+
 /*newsletter starts here*/
-{
 .newsletter {
   padding: 1rem 1rem;
   text-align: center;
@@ -244,7 +240,7 @@ a:hover {
 
 .newsletter p {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 14px;
 }
 .newsletter form {
   display: flex;
@@ -256,7 +252,9 @@ a:hover {
   padding: 10px;
   font-size: 16px;
   border: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 8px;
+  width: 100%;
+  margin-left: 10%;
 }
 
 .newsletter button {
@@ -265,12 +263,15 @@ a:hover {
   color: #fff;
   border: none;
   font-size: 16px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 15px;
   cursor: pointer;
+  
+  margin-right: 10%;
+  
 }
-}
+
 /* Products Section */
-{
+
 .products {
   padding: 50px 20px;
   text-align: center;
@@ -308,9 +309,8 @@ a:hover {
   font-size: 14px;
   color: #888;
 }
-}
+
 /* Tabs */
-{
 .tabs {
   display: flex;
   justify-content: center;
@@ -334,10 +334,8 @@ a:hover {
 .tab-content.active {
   display: block;
 }
-}
 /*modal buttons for shopping also contains modals so check well*/
 /*padding: 10px;*/
-{
 .modal-buttons {
   position: absolute;
   top: 70px;
@@ -397,9 +395,9 @@ button .fas {
   font-size: 24px;
   color: 230B34;
 }
-}
+
 /*checkout page start here. note it also contains modals so check well*/
-{
+
 .checkout-container {
   display: flex;
   justify-content: center;
@@ -527,9 +525,9 @@ button .fas {
   text-decoration: none;
   cursor: pointer;
 }
-}
+
 /* checkout modal */
- {
+ 
   .modal-content {
     text-align: center;
   }
@@ -572,9 +570,9 @@ button .fas {
   .modal-content button:hover {
     background-color: #45a049;
   }
-}
+
 /*cart start here*/
- {
+ 
   main h1 {
     margin-left: 7%;
   }
@@ -684,9 +682,9 @@ button .fas {
     display: flex;
     justify-content: space-between;
   }
-}
+
 /*footer*/
- {
+ 
   footer {
     background-color: #222222; /* Darker background */
     color: white;
@@ -793,10 +791,107 @@ button .fas {
     margin-top: 10px;
     margin-right: 20px;
   }
-}
+
 
 /* media queuries*/
-
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding: 10px 0px; 
+    
+}
+  header nav ul{
+  font-size: 11px;
+}
+  header .icons a {
+  margin: 0 3px;
+}
+header .logo {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.hero-text h1 {
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 22px;
+}
+.hero-text p{
+  font-size: 16px;
+  margin: 3px 0;
+}
+.hero-text .btn {
+  margin: 0 5px;
+  margin-bottom: 5px;
+  padding: 5px 20px;
+  background-color: #483c32;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.trends {
+  padding: 10px; 
+}
+.trends-content{
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+}
+.trends-text {
+  max-width: 100%;
+}
+.trends-image img {
+  width: 390px;
+}
+.trends-text h2 {
+  font-size: 22px;
+  color: #313131;
+  margin-bottom: 10px;
+}
+.trends-text p {
+  font-size: 18px;
+  margin: 5px;
+  color: #313131;
+ 
+}
+.exp a{
+  margin: 0 10px;
+}
+.exp .arr {
+  padding-bottom: 0;
+}
+.collections {
+  padding: 10px; 
+}
+.collec {
+  overflow-x: scroll;
+}
+.collections h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.collection-grid {
+  width: fit-content;
+  justify-content: center;
+  gap: 18px;
+  padding-left: 10px;
+  align-items: center;
+  display: flex;
+}
+.collection-item {
+  width: 350px;
+}
+.collection-item p {
+  padding: 20px 0px;
+  font-size: 24px;
+  margin: 0;
+}
+/*continue from products */
+}
 /* Phone*/
 /*body, header, nav*/
 
