@@ -684,7 +684,6 @@ button .fas {
   }
 
 /*footer*/
- 
   footer {
     background-color: #222222; /* Darker background */
     color: white;
@@ -891,6 +890,51 @@ header .logo {
   margin: 0;
 }
 /*continue from products */
+/*footer quries */
+footer {
+  padding: 15px;
+}
+.footer-content{
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.where {
+  margin: 0;
+}
+.footer-logo {
+  display: flex;
+}
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+}
+.footer-section h3{
+  margin: 5px 0;
+}
+.las {
+  padding: 0;
+}
+.footer-bottom {
+  padding: 0;
+  margin-top: 0;
+}
+.footer-bottom p {
+  margin:0;
+  padding-left: 0;
+  font-size: 12px;
+  padding-top: 15px;
+}
+.footer-social {
+  margin-left: 30px; /*or change it to 0*/
+  margin-right: 0px;
+}
+
+
 }
 /* Phone*/
 /*body, header, nav*/
